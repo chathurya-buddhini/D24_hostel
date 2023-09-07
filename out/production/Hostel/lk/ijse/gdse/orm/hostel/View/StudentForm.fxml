@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hostel.Controller.studentController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="750.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Frame 9.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="455.0" fitWidth="239.0" layoutX="497.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img-student-3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="61.0" text="Student ID">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="136.0" text="Student Name">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="346.0" layoutY="137.0" text="Address">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="210.0" text="Contact Number">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="284.0" text="Gender">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtid" layoutX="38.0" layoutY="96.0" prefHeight="32.0" prefWidth="196.0" />
+      <TextField fx:id="txtname" layoutX="38.0" layoutY="171.0" prefHeight="32.0" prefWidth="196.0" />
+      <TextField fx:id="txtaddress" layoutX="345.0" layoutY="174.0" prefHeight="32.0" prefWidth="196.0" />
+      <Label layoutX="228.0" prefHeight="69.0" prefWidth="182.0" text="Student ">
+         <font>
+            <Font name="Dyuthi Regular" size="51.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnumber" layoutX="39.0" layoutY="244.0" prefHeight="32.0" prefWidth="196.0" />
+      <Label layoutX="350.0" layoutY="210.0" text="DOB">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbgender" layoutX="39.0" layoutY="322.0" onAction="#cmbgenderOnAction" prefHeight="32.0" prefWidth="165.0" />
+      <TableView fx:id="tblStudent" layoutX="17.0" layoutY="376.0" onMouseClicked="#OnActionMouseClicked" prefHeight="200.0" prefWidth="712.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="119.0" text="Student ID" />
+          <TableColumn fx:id="colname" prefWidth="143.0" text="Student name" />
+            <TableColumn fx:id="coladdress" prefWidth="113.0" text="Address" />
+            <TableColumn fx:id="colcontact" prefWidth="119.0" text="Contact" />
+            <TableColumn fx:id="coldob" prefWidth="104.0" text="DOB" />
+            <TableColumn fx:id="colgender" prefWidth="112.0" text="Gender" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSave" layoutX="311.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="66.0" text="Save" />
+      <Button fx:id="btnDelete" layoutX="508.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="24.0" prefWidth="66.0" text="Delete" />
+      <Button fx:id="btnUpdate" layoutX="413.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" />
+      <Button fx:id="btnClear" layoutX="612.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="24.0" prefWidth="66.0" text="Clear" />
+      <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="11.0" layoutY="5.0" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/7792362.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="textdob" layoutX="347.0" layoutY="240.0" />
+   </children>
+</AnchorPane>

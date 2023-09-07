@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hostel.Controller.reservationController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="750.0" layoutX="1.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Frame%209.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="311.0" fitWidth="253.0" layoutX="483.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cv-blue-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="131.0" layoutX="14.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cv-blue-40.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="250.0" prefHeight="84.0" prefWidth="213.0" text="Resertion">
+         <font>
+            <Font name="Dyuthi Regular" size="51.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbstatus" layoutX="39.0" layoutY="189.0" prefWidth="150.0" />
+      <TextField fx:id="txtid" layoutX="36.0" layoutY="119.0" />
+      <Label layoutX="325.0" layoutY="149.0" text="Student ID">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="82.0" text="Resertion ID">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="535.0" layoutY="35.0" prefHeight="42.0" prefWidth="150.0" text="Date">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="82.0" text="Room type ID">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="149.0" text="Status">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtqty" layoutX="36.0" layoutY="323.0" />
+      <ComboBox fx:id="cmbstuId" layoutX="325.0" layoutY="189.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbroom" layoutX="321.0" layoutY="119.0" prefWidth="150.0" />
+      <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="21.0" layoutY="15.0" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/7792362.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSave" layoutX="321.0" layoutY="336.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="66.0" text="Save" />
+      <Button fx:id="btnDelete" layoutX="522.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="24.0" prefWidth="66.0" text="Delete" />
+      <Button fx:id="btnUpdate" layoutX="430.0" layoutY="337.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" />
+      <Button fx:id="btnClear" layoutX="622.0" layoutY="337.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="24.0" prefWidth="66.0" text="Clear" />
+      <TableView fx:id="tblresertion" layoutX="6.0" layoutY="383.0" onMouseClicked="#OnActionMouseClicked" prefHeight="200.0" prefWidth="737.0">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="98.0" text="Resertion ID" />
+            <TableColumn fx:id="cols_id" prefWidth="98.0" text="Student ID" />
+            <TableColumn fx:id="colstatus" prefWidth="118.0" text="Status" />
+            <TableColumn fx:id="colroomid" prefWidth="104.0" text="Room  ID" />
+            <TableColumn fx:id="coltype" prefWidth="100.0" text="RoomType" />
+            <TableColumn fx:id="colname" prefWidth="100.0" text="Name" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtname" layoutX="36.0" layoutY="259.0" />
+      <TextField fx:id="txtroomtype" layoutX="327.0" layoutY="259.0" />
+      <Label layoutX="44.0" layoutY="217.0" text="Student Name">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="327.0" layoutY="217.0" text="Room type">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="281.0" text="QTY">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

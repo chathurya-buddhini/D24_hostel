@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hostel.Controller.roomController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="750.0" layoutX="1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Frame 9.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="178.0" fitWidth="203.0" layoutX="116.0" layoutY="41.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/images.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="303.0" fitWidth="277.0" layoutX="464.0" layoutY="12.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/images.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="21.0" layoutY="15.0" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/7792362.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="282.0" layoutY="14.0" prefHeight="84.0" prefWidth="135.0" text="Room">
+         <font>
+            <Font name="Dyuthi Regular" size="51.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="321.0" layoutY="255.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="66.0" text="Save" />
+      <Button fx:id="btnUpdate" layoutX="416.0" layoutY="255.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="24.0" prefWidth="66.0" text="Update" />
+      <Button fx:id="btnDelete" layoutX="521.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Delete" />
+      <Button fx:id="btnClear" layoutX="622.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="24.0" prefWidth="66.0" text="Clear" />
+      <TableView fx:id="tblroom" layoutX="19.0" layoutY="312.0" onMouseClicked="#OnActionMouseClicked" prefHeight="248.0" prefWidth="712.0">
+         <columns>
+            <TableColumn fx:id="colrooid" prefWidth="181.0" text="Room type ID" />
+            <TableColumn fx:id="coltype" prefWidth="167.0" text="Type" />
+            <TableColumn fx:id="colmoney" prefWidth="172.0" text="Key money" />
+            <TableColumn fx:id="colqty" prefWidth="191.0" text="QTY" />
+         </columns>
+      </TableView>
+      <Label layoutX="48.0" layoutY="83.0" text="Room type ID">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="156.0" text="Type">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="46.0" layoutY="129.0" />
+      <Label layoutX="343.0" layoutY="85.0" text="Key money">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmany" layoutX="344.0" layoutY="125.0" />
+      <Label layoutX="344.0" layoutY="155.0" text="QTY">
+         <font>
+            <Font name="Dyuthi Regular" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtqty" layoutX="344.0" layoutY="196.0" />
+      <TextField fx:id="txttype" layoutX="46.0" layoutY="196.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="E mail">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/orm/hostel/lib/E mail/activation-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/orm/hostel/lib/E mail/javax.mail-1.6.1.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/src/lk/ijse/gdse/orm/hostel/lib/E mail" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/src/lk/ijse/gdse/orm/hostel/lib/E mail" recursive="false" />
+  </library>
+</component>

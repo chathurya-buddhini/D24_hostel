@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="controlsfx-8.40.11 (1)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/orm/hostel/lib/controlsfx-8.40.11 (1).jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/orm/hostel/lib/jfoenix-8.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/orm/hostel/lib/mysql-connector-java-8.0.30.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
