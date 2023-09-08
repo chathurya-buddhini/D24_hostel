@@ -7,64 +7,64 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="832.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel1.controller.DashboardForm">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel1.controller.DashboardForm">
    <children>
-      <ImageView fitHeight="832.0" fitWidth="950.0" layoutX="-3.0" pickOnBounds="true">
+      <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true">
          <image>
-            <Image url="@assets/D24.jpg" />
+            <Image url="@assets/Frame 19.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblStudent" layoutX="365.0" layoutY="652.0" prefHeight="17.0" prefWidth="91.0" text="23">
+      <Label fx:id="lblStudent" layoutX="339.0" layoutY="465.0" prefHeight="17.0" prefWidth="91.0" text="23">
          <font>
             <Font size="50.0" />
          </font>
       </Label>
-      <Label fx:id="lblRooms" layoutX="497.0" layoutY="652.0" prefHeight="17.0" prefWidth="91.0" text="10">
+      <Label fx:id="lblRooms" layoutX="698.0" layoutY="465.0" prefHeight="17.0" prefWidth="91.0" text="10">
          <font>
             <Font size="50.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/Rectangle 25.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="371.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="430.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/Rectangle 25.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="592.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="698.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/Rectangle 25.png" />
          </image>
       </ImageView>
-      <Text fill="#002b5b" layoutX="207.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students">
+      <Text fill="#360e03" layoutX="207.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students">
          <font>
             <Font name="Helvetica Bold" size="20.0" />
          </font>
       </Text>
-      <Text fill="#002b5b" layoutX="440.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms">
+      <Text fill="#360e03" layoutX="489.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms">
          <font>
             <Font name="Helvetica Bold" size="20.0" />
          </font>
       </Text>
-      <Text fill="#002b5b" layoutX="629.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservations">
+      <Text fill="#360e03" layoutX="733.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservations">
          <font>
             <Font name="Helvetica Bold" size="20.0" />
          </font>
       </Text>
-      <Text fx:id="txtStudents" fill="#002b5b" layoutX="227.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+      <Text fx:id="txtStudents" fill="#120222" layoutX="227.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
          <font>
             <Font name="Helvetica Bold" size="40.0" />
          </font>
       </Text>
-      <Text fx:id="txtRooms" fill="#002b5b" layoutX="452.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+      <Text fx:id="txtRooms" fill="#120222" layoutX="496.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
          <font>
             <Font name="Helvetica Bold" size="40.0" />
          </font>
       </Text>
-      <Text fx:id="txtReservation" fill="#002b5b" layoutX="673.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+      <Text fx:id="txtReservation" fill="#120222" layoutX="772.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
          <font>
             <Font name="Helvetica Bold" size="40.0" />
          </font>
