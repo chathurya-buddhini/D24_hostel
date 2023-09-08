@@ -14,7 +14,7 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="Hostel" />
+          <factory-entry name="Hostel" value="30123640-f657-4745-9315-9934a191739a" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>

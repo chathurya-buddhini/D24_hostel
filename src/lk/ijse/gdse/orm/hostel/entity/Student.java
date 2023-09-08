@@ -1,6 +1,7 @@
 package lk.ijse.gdse.orm.hostel.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -21,8 +22,10 @@ public class Student {
     @Column(name = "contact_no")
     String Contact;
 
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "student")
-    private List<Reservation> reservationList;
+//    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "student")
+//    private List<Reservation> reservationList;
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
+    private List<Reservation> resList = new ArrayList<>();
 
     public Student() { }
     public Student(String id, String student_name, String student_address, String DOB, String gender, String contact) {

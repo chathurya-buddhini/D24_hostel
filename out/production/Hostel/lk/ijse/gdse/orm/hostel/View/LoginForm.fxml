@@ -37,7 +37,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtPassShow" layoutX="381.0" layoutY="334.0" prefHeight="34.0" prefWidth="236.0" />
+      <TextField fx:id="txtPassShow" layoutX="382.0" layoutY="334.0" prefHeight="34.0" prefWidth="236.0" />
       <ImageView fx:id="imgClosed" fitHeight="34.0" fitWidth="33.0" layoutX="581.0" layoutY="334.0" onMouseClicked="#eyeClosedOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/o2.png" />

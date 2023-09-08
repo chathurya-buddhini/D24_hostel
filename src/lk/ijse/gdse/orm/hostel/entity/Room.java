@@ -1,6 +1,7 @@
 package lk.ijse.gdse.orm.hostel.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,8 +18,11 @@ public class Room {
     @Column(name = "qty")
     int QTY;
 
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "room")
-    List<Reservation> reservationList;
+//    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "room")
+//    List<Reservation> reservationList;
+@OneToMany(mappedBy = "room", cascade = CascadeType.ALL)
+private List<Reservation> resList = new ArrayList<>();
+
 
     public Room() { }
     public Room(String id, String room_type, String money, int QTY) {
@@ -67,7 +71,7 @@ public class Room {
                 ", room_type='" + room_type + '\'' +
                 ", money='" + money + '\'' +
                 ", QTY=" + QTY +
-                ", reservationList=" + reservationList +
+                ", resList=" + resList +
                 '}';
     }
 }

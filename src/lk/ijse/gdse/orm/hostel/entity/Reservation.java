@@ -15,15 +15,16 @@ public class Reservation {
     private Date date;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "student_type_id",
+            referencedColumnName = "student_id")
     private Student student;
-
     @ManyToOne
-    @JoinColumn(name = "room_type_id")
+    @JoinColumn(name = "room_id",
+            referencedColumnName = "room_id")
     private Room room;
+
     @Column(name = "status")
     String status;
-
 
 
     public Reservation() { }
