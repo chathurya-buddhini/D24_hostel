@@ -26,7 +26,7 @@ public class StudentBoImpl implements StudentBo {
         for (Student student:stList) {
             list.add(
                     new StudentDTO(
-                            student.getId (),
+                            student.getSt_id (),
                             student.getStudent_name (),
                             student.getStudent_address(),
                             student.getDOB(),
@@ -47,7 +47,7 @@ public class StudentBoImpl implements StudentBo {
         try{
             studentDAO.setSession (session);
             String id=studentDAO.save (new Student (
-                    dto.getId (),
+                    dto.getSt_id (),
                     dto.getStudent_name (),
                     dto.getStudent_address (),
                     dto.getDOB (),
@@ -72,7 +72,7 @@ public class StudentBoImpl implements StudentBo {
         try {
             studentDAO.setSession (session);
             studentDAO.update (new Student (
-                    dto.getId (),
+                    dto.getSt_id (),
                     dto.getStudent_name (),
                     dto.getStudent_address (),
                     dto.getDOB (),
@@ -96,7 +96,7 @@ public class StudentBoImpl implements StudentBo {
         try{
             studentDAO.setSession (session);
             studentDAO.delete (new Student (
-                    dto.getId (),
+                    dto.getSt_id (),
                     dto.getStudent_name (),
                     dto.getStudent_address (),
                     dto.getDOB (),
@@ -120,7 +120,7 @@ public class StudentBoImpl implements StudentBo {
         Student st=studentDAO.getObject (id);
         session.close ();
         return new StudentDTO (
-                st.getId (),
+                st.getSt_id (),
                 st.getStudent_name (),
                 st.getStudent_address (),
                 st.getGender (),

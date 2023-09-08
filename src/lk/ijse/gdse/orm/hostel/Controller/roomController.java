@@ -79,7 +79,7 @@ public class roomController implements Initializable {
 
         try {
             RoomDTO dto = roomBo.getRoom (roomId);
-            txtId.setText (dto.getId ());
+            txtId.setText (dto.getRoom_type ());
             txttype.setText (dto.getRoom_type ());
             txtmany.setText (dto.getMoney ());
             txtqty.setText (String.valueOf (dto.getQTY ()));
@@ -203,7 +203,7 @@ public class roomController implements Initializable {
         String roomId = txtId.getText ();
         List<RoomDTO> allRooms = roomBo.loadAll ();
         for (RoomDTO r : allRooms) {
-            if (roomId.equals (r.getId ())) {
+            if (roomId.equals (r.getQTY ())) {
                 new Alert (Alert.AlertType.ERROR, "This ID Already Have").show ();
                 return false;
             }
@@ -214,7 +214,7 @@ public class roomController implements Initializable {
         Session session = SessionFactoryConfig.getInstance ().getSession ();
         Transaction transaction = session.beginTransaction ();
 
-        Query query = session.createQuery ("select id from Room order by id desc");
+        Query query = session.createQuery ("select Room_id from Room order by Room_id desc");
 
         String nextId = "R001";
 

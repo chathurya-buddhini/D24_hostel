@@ -96,10 +96,10 @@ public class reservationController implements Initializable {
 
             for (ReservationDTO dto : allRoom) {
                 resList.add (new ReservationTM (
-                        dto.getId (),
-                        dto.getStudentDTO ().getId (),
+                        dto.getRs_id (),
                         dto.getStudentDTO ().getStudent_name (),
-                        dto.getRoomDTO ().getId (),
+                        dto.getStudentDTO ().getStudent_name (),
+                        dto.getRoomDTO ().getRoom_id (),
                         dto.getRoomDTO ().getRoom_type (),
                         dto.getStatus ()
                 ));
@@ -165,13 +165,13 @@ public class reservationController implements Initializable {
 
         try {
             ReservationDTO dto = reservationBo.getRes (resID);
-            System.out.println (dto.getId ());
-            txtid.setText (dto.getId ());
+            System.out.println (dto.getRs_id ());
+            txtid.setText (dto.getRs_id ());
             txtroomtype.setText (dto.getRoomDTO ().getRoom_type ());
             txtname.setText (dto.getStudentDTO ().getStudent_name ());
-            String stID = dto.getStudentDTO ().getId ();
+            String stID = dto.getStudentDTO ().getSt_id ();
             cmbstuId.setValue (stID);
-            cmbroom.setValue (dto.getRoomDTO ().getId ());
+            cmbroom.setValue (dto.getRoomDTO ().getRoom_id ());
             cmbstatus.setValue (dto.getStatus ());
             txtqty.setText (String.valueOf (dto.getRoomDTO ().getQTY ()));
         } catch (Exception e) {
@@ -286,7 +286,7 @@ public class reservationController implements Initializable {
         Session session = SessionFactoryConfig.getInstance ().getSession ();
         Transaction transaction = session.beginTransaction ();
 
-        Query query = session.createQuery ("select id from Reservation order by id desc");
+        Query query = session.createQuery ("select Rs_id from Reservation order by Rs_id desc");
 
         String nextId = "T001";
 
@@ -333,7 +333,7 @@ public class reservationController implements Initializable {
         List<ReservationDTO> list = reservationBo.loadAll ();
 
         for (ReservationDTO dto : list) {
-            if (resId.equals (dto.getId ())) {
+            if (resId.equals (dto.getRs_id ())) {
                 new Alert (Alert.AlertType.CONFIRMATION, "RESERVATION ADDED SUCCUSS").show ();
                 return false;
             }

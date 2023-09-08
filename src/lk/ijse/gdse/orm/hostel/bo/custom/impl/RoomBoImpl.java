@@ -28,7 +28,7 @@ public class RoomBoImpl implements RoomBo {
         for (Room room:list) {
             roomList.add(
                     new RoomDTO (
-                            room.getId (),
+                            room.getRoom_id (),
                             room.getRoom_type (),
                             room.getMoney (),
                             room.getQTY ()
@@ -48,7 +48,7 @@ public class RoomBoImpl implements RoomBo {
         try{
             roomDAO.setSession (session);
             roomDAO.save (new Room (
-                    dto.getId (),
+                    dto.getRoom_id (),
                     dto.getRoom_type (),
                     dto.getMoney (),
                     dto.getQTY ()
@@ -71,7 +71,7 @@ public class RoomBoImpl implements RoomBo {
         try {
             roomDAO.setSession (session);
             roomDAO.update (new Room (
-                    dto.getId (),
+                    dto.getRoom_id (),
                     dto.getRoom_type (),
                     dto.getMoney (),
                     dto.getQTY ()
@@ -94,7 +94,7 @@ public class RoomBoImpl implements RoomBo {
         try{
             roomDAO.setSession (session);
             roomDAO.delete (new Room (
-                    dto.getId (),
+                    dto.getRoom_id (),
                     dto.getRoom_type (),
                     dto.getMoney (),
                     dto.getQTY ()
@@ -117,7 +117,7 @@ public class RoomBoImpl implements RoomBo {
         Room r=roomDAO.getObject (id);
         session.close ();
         return new RoomDTO (
-                r.getId (),
+                r.getRoom_id (),
                 r.getRoom_type (),
                 r.getMoney (),
                 r.getQTY ()

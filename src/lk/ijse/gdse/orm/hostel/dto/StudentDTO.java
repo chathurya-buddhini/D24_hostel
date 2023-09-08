@@ -1,7 +1,7 @@
 package lk.ijse.gdse.orm.hostel.dto;
 
 public class StudentDTO {
-    private String id;
+    private String St_id;
     private String student_name;
     private String student_address;
     private String DOB;
@@ -10,8 +10,9 @@ public class StudentDTO {
 
     public StudentDTO() {
     }
-    public StudentDTO(String id, String student_name, String student_address, String DOB, String gender, String contact) {
-        this.id = id;
+
+    public StudentDTO(String st_id, String student_name, String student_address, String DOB, String gender, String contact) {
+        St_id = st_id;
         this.student_name = student_name;
         this.student_address = student_address;
         this.DOB = DOB;
@@ -19,14 +20,13 @@ public class StudentDTO {
         Contact = contact;
     }
 
-    public String getId() {
-        return id;
+    public String getSt_id() {
+        return St_id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setSt_id(String st_id) {
+        St_id = st_id;
     }
-
 
     public String getStudent_name() {
         return student_name;
@@ -71,12 +71,12 @@ public class StudentDTO {
     @Override
     public String toString() {
         return "StudentDTO{" +
-                "id='" + id + '\'' +
+                "St_id='" + St_id + '\'' +
                 ", student_name='" + student_name + '\'' +
                 ", student_address='" + student_address + '\'' +
                 ", DOB='" + DOB + '\'' +
                 ", Gender='" + Gender + '\'' +
-                ", Contact=" + Contact +
+                ", Contact='" + Contact + '\'' +
                 '}';
     }
 }

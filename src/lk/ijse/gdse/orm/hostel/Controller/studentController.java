@@ -65,7 +65,7 @@ public class studentController implements Initializable {
         Session session = SessionFactoryConfig.getInstance ().getSession ();
         Transaction transaction = session.beginTransaction ();
 
-        Query query = session.createQuery ("select id from Student order by id desc");
+        Query query = session.createQuery ("select St_id from Student order by St_id desc");
 
         String nextId = "S001";
 
@@ -197,7 +197,7 @@ public class studentController implements Initializable {
     public boolean checkDuplicate() {
         List<StudentDTO> allStudents = studentBO.loadAll ();
         for (StudentDTO s : allStudents) {
-            if (s.getId ().equals (txtid.getText ())) {
+            if (s.getGender ().equals (txtid.getText ())) {
                 new Alert (Alert.AlertType.ERROR, "This ID Already Have").show ();
                 return false;
             }
@@ -230,7 +230,7 @@ public class studentController implements Initializable {
 
         try {
             StudentDTO dto = studentBO.getStudent (stId);
-            txtid.setText (dto.getId ());
+            txtid.setText (dto.getStudent_name ());
             txtname.setText (dto.getStudent_name ());
             txtaddress.setText (dto.getStudent_address ());
             txtnumber.setText (dto.getContact ());

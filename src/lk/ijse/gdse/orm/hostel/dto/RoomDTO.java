@@ -1,7 +1,7 @@
 package lk.ijse.gdse.orm.hostel.dto;
 
 public class RoomDTO {
-    private String id;
+    private String Room_id;
     private String room_type;
     private String money;
     private Integer QTY;
@@ -9,19 +9,19 @@ public class RoomDTO {
     public RoomDTO() {
     }
 
-    public RoomDTO(String id, String room_type, String money, Integer QTY) {
-        this.id = id;
+    public RoomDTO(String room_id, String room_type, String money, Integer QTY) {
+        Room_id = room_id;
         this.room_type = room_type;
         this.money = money;
         this.QTY = QTY;
     }
 
-    public String getId() {
-        return id;
+    public String getRoom_id() {
+        return Room_id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setRoom_id(String room_id) {
+        Room_id = room_id;
     }
 
     public String getRoom_type() {
@@ -51,7 +51,7 @@ public class RoomDTO {
     @Override
     public String toString() {
         return "RoomDTO{" +
-                "id='" + id + '\'' +
+                "Room_id='" + Room_id + '\'' +
                 ", room_type='" + room_type + '\'' +
                 ", money='" + money + '\'' +
                 ", QTY=" + QTY +

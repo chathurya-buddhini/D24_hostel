@@ -10,7 +10,7 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "room_type_id",length = 25)
-    String id;
+    String Room_id;
     @Column(name = "type")
     String room_type;
     @Column(name = "key_money")
@@ -24,25 +24,28 @@ public class Room {
 private List<Reservation> resList = new ArrayList<>();
 
 
-    public Room() { }
-    public Room(String id, String room_type, String money, int QTY) {
-        this.id = id;
+    public Room(String room_id, String room_type, String money, Integer qty) { }
+
+    public Room(String room_id, String room_type, String money, int QTY, List<Reservation> resList) {
+        Room_id = room_id;
         this.room_type = room_type;
         this.money = money;
         this.QTY = QTY;
+        this.resList = resList;
     }
 
-    public String getId() {
-        return id;
+    public String getRoom_id() {
+        return Room_id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setRoom_id(String room_id) {
+        Room_id = room_id;
     }
 
     public String getRoom_type() {
         return room_type;
     }
+
 
     public void setRoom_type(String room_type) {
         this.room_type = room_type;
@@ -67,7 +70,7 @@ private List<Reservation> resList = new ArrayList<>();
     @Override
     public String toString() {
         return "Room{" +
-                "id='" + id + '\'' +
+                "Room_id='" + Room_id + '\'' +
                 ", room_type='" + room_type + '\'' +
                 ", money='" + money + '\'' +
                 ", QTY=" + QTY +

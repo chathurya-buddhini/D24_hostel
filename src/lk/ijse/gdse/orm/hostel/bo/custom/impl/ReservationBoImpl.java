@@ -59,7 +59,7 @@ public class ReservationBoImpl implements ReservationBo {
             Student st = studentDAO.getObject (id);
             session.close ();
             return new StudentDTO (
-                    st.getId (),
+                    st.getSt_id (),
                     st.getStudent_name (),
                     st.getStudent_address (),
                     st.getDOB (),
@@ -84,7 +84,7 @@ public class ReservationBoImpl implements ReservationBo {
             Room room=roomDAO.getObject (id);
             session.close ();
             return new RoomDTO (
-                    room.getId (),
+                    room.getRoom_id (),
                     room.getRoom_type (),
                     room.getMoney (),
                     room.getQTY ()
@@ -108,10 +108,10 @@ public class ReservationBoImpl implements ReservationBo {
             Reservation res = reservationDAO.getObject (resID);
             session.close ();
             return new ReservationDTO (
-                    res.getId (),
+                    res.getRs_id (),
                     res.getDate (),
                     new StudentDTO (
-                            res.getStudent ().getId (),
+                            res.getStudent ().getSt_id (),
                             res.getStudent ().getStudent_name (),
                             res.getStudent ().getStudent_address (),
                             res.getStudent ().getDOB (),
@@ -119,7 +119,7 @@ public class ReservationBoImpl implements ReservationBo {
                             res.getStudent ().getContact ()
                     ),
                     new RoomDTO (
-                            res.getRoom ().getId (),
+                            res.getRoom ().getRoom_id (),
                             res.getRoom ().getRoom_type (),
                             res.getRoom ().getMoney (),
                             res.getRoom ().getQTY ()
@@ -143,7 +143,7 @@ public class ReservationBoImpl implements ReservationBo {
         try {
             roomDAO.setSession (session);
             roomDAO.update (new Room (
-                    dto.getId (),
+                    dto.getRoom_id (),
                     dto.getRoom_type (),
                     dto.getMoney (),
                     dto.getQTY ()
@@ -172,10 +172,10 @@ public class ReservationBoImpl implements ReservationBo {
             reservationDAO.setSession (session);
             reservationDAO.save (
                     new Reservation (
-                            dto.getId (),
+                            dto.getRs_id (),
                             dto.getDate (),
                             new Student (
-                                    dto.getStudentDTO ().getId (),
+                                    dto.getStudentDTO ().getSt_id (),
                                     dto.getStudentDTO ().getStudent_name (),
                                     dto.getStudentDTO ().getStudent_address (),
                                     dto.getStudentDTO ().getContact (),
@@ -183,7 +183,7 @@ public class ReservationBoImpl implements ReservationBo {
                                     dto.getStudentDTO ().getDOB ()
                             ),
                             new Room (
-                                    dto.getRoomDTO ().getId (),
+                                    dto.getRoomDTO ().getRoom_id (),
                                     dto.getRoomDTO ().getRoom_type (),
                                     dto.getRoomDTO ().getMoney (),
                                     dto.getRoomDTO ().getQTY ()
@@ -210,10 +210,10 @@ public class ReservationBoImpl implements ReservationBo {
             reservationDAO.setSession (session);
             reservationDAO.update (
                     new Reservation (
-                            dto.getId (),
+                            dto.getRs_id (),
                             dto.getDate (),
                             new Student (
-                                    dto.getStudentDTO ().getId (),
+                                    dto.getStudentDTO ().getSt_id (),
                                     dto.getStudentDTO ().getStudent_name (),
                                     dto.getStudentDTO ().getStudent_address (),
                                     dto.getStudentDTO ().getDOB (),
@@ -221,7 +221,7 @@ public class ReservationBoImpl implements ReservationBo {
                                     dto.getStudentDTO ().getContact ()
                             ),
                             new Room (
-                                    dto.getRoomDTO ().getId (),
+                                    dto.getRoomDTO ().getRoom_id (),
                                     dto.getRoomDTO ().getRoom_type (),
                                     dto.getRoomDTO ().getMoney (),
                                     dto.getRoomDTO ().getQTY ()
@@ -247,10 +247,10 @@ public class ReservationBoImpl implements ReservationBo {
             reservationDAO.setSession(session);
             reservationDAO.delete(
                     new Reservation(
-                            dto.getId(),
+                            dto.getRs_id(),
                             dto.getDate(),
                             new Student(
-                                    dto.getStudentDTO ().getId (),
+                                    dto.getStudentDTO ().getSt_id (),
                                     dto.getStudentDTO ().getStudent_name (),
                                     dto.getStudentDTO ().getStudent_address(),
                                     dto.getStudentDTO ().getDOB (),
@@ -258,7 +258,7 @@ public class ReservationBoImpl implements ReservationBo {
                                     dto.getStudentDTO ().getContact ()
                             ),
                             new Room(
-                                    dto.getRoomDTO ().getId (),
+                                    dto.getRoomDTO ().getRoom_id (),
                                     dto.getRoomDTO ().getRoom_type (),
                                     dto.getRoomDTO ().getMoney (),
                                     dto.getRoomDTO ().getQTY ()
@@ -289,10 +289,10 @@ public class ReservationBoImpl implements ReservationBo {
 
         for (Reservation res :list) {
             resList.add(new ReservationDTO (
-                    res.getId (),
+                    res.getRs_id (),
                     res.getDate (),
                     new StudentDTO (
-                            res.getStudent ().getId (),
+                            res.getStudent ().getSt_id (),
                             res.getStudent ().getStudent_name (),
                             res.getStudent ().getStudent_address (),
                             res.getStudent ().getDOB (),
@@ -300,7 +300,7 @@ public class ReservationBoImpl implements ReservationBo {
                             res.getStudent ().getContact ()
                     ),
                     new RoomDTO (
-                            res.getRoom ().getId (),
+                            res.getRoom ().getRoom_id (),
                             res.getRoom ().getRoom_type (),
                             res.getRoom ().getMoney (),
                             res.getRoom ().getQTY ()

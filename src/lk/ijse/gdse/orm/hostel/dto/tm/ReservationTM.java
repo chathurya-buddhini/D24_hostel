@@ -1,31 +1,39 @@
 package lk.ijse.gdse.orm.hostel.dto.tm;
 
 public class ReservationTM {
-    private String id;
+    private String Rs_id;
     private String Date;
     private String Status;
-    private String roomId;
+    private String Room_id;
     private String roomName;
     private String status;
 
     public ReservationTM() {
     }
 
-    public ReservationTM(String id, String date, String status, String roomId, String roomName, String status1) {
-        this.id = id;
+    public ReservationTM(String rs_id, String date, String status, String room_id, String roomName, String status1) {
+        Rs_id = rs_id;
         Date = date;
         Status = status;
-        this.roomId = roomId;
+        Room_id = room_id;
         this.roomName = roomName;
         this.status = status1;
     }
 
-    public String getId() {
-        return id;
+    public String getRs_id() {
+        return Rs_id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setRs_id(String rs_id) {
+        Rs_id = rs_id;
+    }
+
+    public String getRoom_id() {
+        return Room_id;
+    }
+
+    public void setRoom_id(String room_id) {
+        Room_id = room_id;
     }
 
     public String getDate() {
@@ -44,14 +52,6 @@ public class ReservationTM {
         Status = status;
     }
 
-    public String getRoomId() {
-        return roomId;
-    }
-
-    public void setRoomId(String roomId) {
-        this.roomId = roomId;
-    }
-
     public String getRoomName() {
         return roomName;
     }
@@ -63,10 +63,10 @@ public class ReservationTM {
     @Override
     public String toString() {
         return "ReservationTM{" +
-                "id='" + id + '\'' +
+                "Rs_id='" + Rs_id + '\'' +
                 ", Date='" + Date + '\'' +
                 ", Status='" + Status + '\'' +
-                ", roomId='" + roomId + '\'' +
+                ", Room_id='" + Room_id + '\'' +
                 ", roomName='" + roomName + '\'' +
                 ", status='" + status + '\'' +
                 '}';

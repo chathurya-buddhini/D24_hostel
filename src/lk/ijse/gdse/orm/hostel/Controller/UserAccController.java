@@ -82,7 +82,7 @@ public class UserAccController implements Initializable {
         Session session = SessionFactoryConfig.getInstance ().getSession ();
         Transaction transaction = session.beginTransaction ();
 
-        Query query = session.createQuery ("select id from User order by id desc");
+        Query query = session.createQuery ("select userId from User order by userId desc");
 
         String nextId = "U001";
 

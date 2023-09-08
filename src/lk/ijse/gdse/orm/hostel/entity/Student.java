@@ -10,7 +10,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "student_id")
-    String id;
+    String St_id;
     @Column(name = "name")
     String student_name;
     @Column(name = "address")
@@ -27,22 +27,32 @@ public class Student {
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
     private List<Reservation> resList = new ArrayList<>();
 
-    public Student() { }
-    public Student(String id, String student_name, String student_address, String DOB, String gender, String contact) {
-        this.id = id;
+    public Student(String st_id, String student_name, String student_address, String contact, String gender, String dob) { }
+
+    public Student(String st_id, String student_name, String student_address, String DOB, String gender, String contact, List<Reservation> resList) {
+        St_id = st_id;
         this.student_name = student_name;
         this.student_address = student_address;
         this.DOB = DOB;
         Gender = gender;
         Contact = contact;
+        this.resList = resList;
     }
 
-    public String getId() {
-        return id;
+    public String getSt_id() {
+        return St_id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setSt_id(String st_id) {
+        St_id = st_id;
+    }
+
+    public List<Reservation> getResList() {
+        return resList;
+    }
+
+    public void setResList(List<Reservation> resList) {
+        this.resList = resList;
     }
 
     public String getStudent_name() {
@@ -88,12 +98,13 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "id='" + id + '\'' +
+                "St_id='" + St_id + '\'' +
                 ", student_name='" + student_name + '\'' +
                 ", student_address='" + student_address + '\'' +
                 ", DOB='" + DOB + '\'' +
                 ", Gender='" + Gender + '\'' +
-                ", Contact=" + Contact +
+                ", Contact='" + Contact + '\'' +
+                ", resList=" + resList +
                 '}';
     }
 }

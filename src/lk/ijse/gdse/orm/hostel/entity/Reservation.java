@@ -9,7 +9,7 @@ public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "res_id")
-    String id;
+    String Rs_id;
 
     @Column(name = "date")
     private Date date;
@@ -29,20 +29,21 @@ public class Reservation {
 
     public Reservation() { }
 
-    public Reservation(String id, Date date, Student student, Room room, String status) {
-        this.id = id;
+
+    public Reservation(String rs_id, Date date, Student student, Room room, String status) {
+        Rs_id = rs_id;
         this.date = date;
         this.student = student;
         this.room = room;
         this.status = status;
     }
 
-    public String getId() {
-        return id;
+    public String getRs_id() {
+        return Rs_id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setRs_id(String rs_id) {
+        Rs_id = rs_id;
     }
 
     public Date getDate() {
@@ -80,7 +81,7 @@ public class Reservation {
     @Override
     public String toString() {
         return "Reservation{" +
-                "id='" + id + '\'' +
+                "Rs_id='" + Rs_id + '\'' +
                 ", date=" + date +
                 ", student=" + student +
                 ", room=" + room +
