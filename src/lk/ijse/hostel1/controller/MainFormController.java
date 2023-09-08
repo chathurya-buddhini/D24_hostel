@@ -25,11 +25,11 @@ public class MainFormController {
     public Button resId;
 
     public void onActionLogOut(ActionEvent actionEvent) throws IOException {
-       /* FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("/lk/ijse/hostel/view/LoginForm.fxml"));
+        FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("/lk/ijse/hostel1/view/LoginForm.fxml"));
         Parent parent=fxmlLoader.load();
         Stage stage=new Stage();
         stage.setScene(new Scene (parent));
-        stage.show();*/
+        stage.show();
 
 
     }

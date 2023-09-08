@@ -13,26 +13,26 @@
             <Image url="@assets/Frame 14.png" />
          </image>
       </ImageView>
-      <Button fx:id="settingId" layoutX="24.0" layoutY="417.0" mnemonicParsing="false" onAction="#onActionSetting" opacity="0.12" prefHeight="44.0" prefWidth="170.0" style="-fx-background-color: #0c2461;" textFill="WHITE">
+      <Button fx:id="settingId" layoutX="6.0" layoutY="417.0" mnemonicParsing="false" onAction="#onActionSetting" opacity="0.12" prefHeight="44.0" prefWidth="215.0" style="-fx-background-color: #0c2461;" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font></Button>
-      <Button fx:id="stManageId" layoutX="11.0" layoutY="196.0" mnemonicParsing="false" onAction="#onActionStudent" opacity="0.08" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: #0c2461;" textFill="WHITE">
+      <Button fx:id="stManageId" layoutX="7.0" layoutY="196.0" mnemonicParsing="false" onAction="#onActionStudent" opacity="0.08" prefHeight="44.0" prefWidth="215.0" style="-fx-background-color: #0c2461;" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
       </Button>
-      <Button fx:id="roomId" layoutX="19.0" layoutY="269.0" mnemonicParsing="false" onAction="#onActionRoom" opacity="0.12" prefHeight="44.0" prefWidth="179.0" style="-fx-background-color: #0c2461;" textFill="WHITE">
+      <Button fx:id="roomId" layoutX="7.0" layoutY="269.0" mnemonicParsing="false" onAction="#onActionRoom" opacity="0.12" prefHeight="44.0" prefWidth="215.0" style="-fx-background-color: #0c2461;" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
       </Button>
-      <Button fx:id="resId" layoutX="21.0" layoutY="347.0" mnemonicParsing="false" onAction="#onActionRervation" opacity="0.08" prefHeight="44.0" prefWidth="179.0" style="-fx-background-color: #0c2461;" textFill="WHITE">
+      <Button fx:id="resId" layoutX="7.0" layoutY="347.0" mnemonicParsing="false" onAction="#onActionRervation" opacity="0.08" prefHeight="44.0" prefWidth="215.0" style="-fx-background-color: #0c2461;" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
       </Button>
-      <Button fx:id="dashboardId" layoutX="14.0" layoutY="121.0" mnemonicParsing="false" onAction="#onActionDashboard" opacity="0.12" prefHeight="44.0" prefWidth="170.0" textFill="WHITE">
+      <Button fx:id="dashboardId" layoutX="7.0" layoutY="121.0" mnemonicParsing="false" onAction="#onActionDashboard" opacity="0.12" prefHeight="44.0" prefWidth="215.0" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>

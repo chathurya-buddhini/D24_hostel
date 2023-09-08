@@ -17,7 +17,7 @@ public class SendMail {
         //String to = "ruvinisubhasinghe200009@gmail.com";
         //String from = "perera.alc2000@gmail.com";
         //
-        String from = "adithyaiman07@gmail.com";
+        String from = "chathuryabuddhini66@gmail.com";
         String host = "localhost";
 
         Properties properties = new Properties();
@@ -26,12 +26,12 @@ public class SendMail {
         properties.put("mail.smtp.host", "smtp.gmail.com");
         properties.put("mail.smtp.port", 587);
 
+
         Session session = Session.getDefaultInstance(properties, new Authenticator() {
             protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("adithyaiman07@gmail.com", "yaehycadvqpuvasw");  // have to change some settings in SMTP
+                return new PasswordAuthentication("chathuryabuddhini66@gmail.com", "Chathu@2002");  // have to change some settings in SMTP
             }
         });
-
         MimeMessage mimeMessage = new MimeMessage(session);
         mimeMessage.setFrom(new InternetAddress (from));
         mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(to));

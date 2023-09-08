@@ -11,17 +11,6 @@ public class Room {
     private String roomId;
     @Column(name = "type")
     private String type;
-
-    public Room(String roomId, String type, String keyMoney, int qty) {
-        this.roomId = roomId;
-        this.type = type;
-        this.keyMoney = keyMoney;
-        this.qty = qty;
-    }
-
-    public Room() {
-    }
-
     @Column(name = "keyMoney")
     private String keyMoney;
     @Column(name = "qty")
@@ -29,6 +18,18 @@ public class Room {
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "room")
     List<Reservation> reservationList;
 
+// defolt constructer
+    public Room() {
+    }
+  //  constructer
+    public Room(String roomId, String type, String keyMoney, int qty, List<Reservation> reservationList) {
+        this.roomId = roomId;
+        this.type = type;
+        this.keyMoney = keyMoney;
+        this.qty = qty;
+        this.reservationList = reservationList;
+    }
+// get ada set
     public String getRoomId() {
         return roomId;
     }
@@ -59,6 +60,14 @@ public class Room {
 
     public void setQty(int qty) {
         this.qty = qty;
+    }
+
+    public List<Reservation> getReservationList() {
+        return reservationList;
+    }
+
+    public void setReservationList(List<Reservation> reservationList) {
+        this.reservationList = reservationList;
     }
 
     @Override

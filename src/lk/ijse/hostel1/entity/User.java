@@ -24,7 +24,6 @@ public class User {
         Password = password;
     }
 
-
     public String getUserName() {
         return userName;
     }
@@ -58,3 +57,4 @@ public class User {
                 '}';
     }
 }
+//    INSERT INTO user VALUES("U001","1234","Chathu");

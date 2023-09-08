@@ -14,7 +14,7 @@ public class Setting {
         stage1.show();
     }
 
-    public void onActionAddUser(ActionEvent actionEvent) throws IOException {
+    public void onActionubdateUser(ActionEvent actionEvent) throws IOException {
         Stage stage1=new Stage();
         stage1.setScene(new Scene (FXMLLoader.load(getClass().getResource("/lk/ijse/hostel1/view/UserAcc.fxml"))));
         stage1.show();

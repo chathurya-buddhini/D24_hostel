@@ -18,7 +18,7 @@
             <Font name="Dyuthi Regular" size="27.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="45.0" layoutY="137.0" onAction="#onActionManageUser" prefHeight="63.0" prefWidth="250.0" text="UPDATE USER" textFill="#0d0d0d">
+      <JFXButton layoutX="45.0" layoutY="137.0" onAction="#onActionubdateUser" prefHeight="63.0" prefWidth="250.0" text="UPDATE USER" textFill="#0d0d0d">
          <font>
             <Font name="Dyuthi Regular" size="27.0" />
          </font>

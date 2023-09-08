@@ -12,25 +12,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #722020;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel1.controller.ReservationManage">
+<AnchorPane prefHeight="600.0" prefWidth="768.0" style="-fx-background-color: #722020;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel1.controller.ReservationManage">
    <children>
-      <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="600.0" fitWidth="768.0" layoutX="1.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/Frame 21.png" />
          </image>
       </ImageView>
-      <Label layoutX="25.0" layoutY="6.0" prefHeight="45.0" prefWidth="350.0" text="RESERVATION INFORMATION">
+      <Label layoutX="25.0" layoutY="6.0" prefHeight="45.0" prefWidth="350.0" text="RESERVATION INFORMATION" textFill="#bc6767">
          <font>
             <Font name="Dyuthi Regular" size="27.0" />
          </font>
       </Label>
       <Separator layoutX="14.0" layoutY="48.0" prefHeight="1.0" prefWidth="359.0" />
-      <Label layoutX="682.0" layoutY="69.0" text="Reservation ID">
+      <Label layoutX="564.0" layoutY="69.0" text="Reservation ID">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="txtResId" layoutX="684.0" layoutY="104.0" />
+      <TextField fx:id="txtResId" layoutX="564.0" layoutY="104.0" />
       <Label layoutX="26.0" layoutY="69.0" text="ROOM ID">
          <font>
             <Font size="17.0" />
@@ -43,35 +43,35 @@
          </font>
       </Label>
       <ComboBox fx:id="cmbSTId" layoutX="26.0" layoutY="181.0" prefHeight="27.0" prefWidth="176.0" />
-      <Label layoutX="392.0" layoutY="71.0" text="ROOM-TYPE">
+      <Label layoutX="265.0" layoutY="71.0" text="ROOM-TYPE">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="txtRoomType" layoutX="392.0" layoutY="102.0" prefHeight="27.0" prefWidth="188.0" />
-      <Label layoutX="684.0" layoutY="148.0" text="QTY">
+      <TextField fx:id="txtRoomType" layoutX="265.0" layoutY="102.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label layoutX="572.0" layoutY="148.0" text="QTY">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="txtQty" layoutX="684.0" layoutY="181.0" prefHeight="27.0" prefWidth="86.0" />
-      <Label layoutX="392.0" layoutY="148.0" text="ST-NAME">
+      <TextField fx:id="txtQty" layoutX="564.0" layoutY="181.0" prefHeight="27.0" prefWidth="86.0" />
+      <Label layoutX="265.0" layoutY="148.0" text="ST-NAME">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="txtStName" layoutX="392.0" layoutY="181.0" prefHeight="27.0" prefWidth="188.0" />
-      <JFXButton buttonType="RAISED" layoutX="855.0" layoutY="264.0" onAction="#onActionDeleteRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: red;" text="DELETE" textFill="WHITE" />
-      <JFXButton buttonType="RAISED" layoutX="697.0" layoutY="264.0" onAction="#onActionUpdateRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #192a56;" text="UPDATE" textFill="WHITE" />
-      <JFXButton buttonType="RAISED" layoutX="524.0" layoutY="264.0" onAction="#onActionSaveRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #f0932b;" text="SAVE" textFill="WHITE" />
-      <TableView fx:id="tblReservation" layoutX="79.0" layoutY="318.0" onMouseClicked="#onMouseClickReservation" prefHeight="299.0" prefWidth="814.0">
+      <TextField fx:id="txtStName" layoutX="265.0" layoutY="181.0" prefHeight="27.0" prefWidth="188.0" />
+      <JFXButton buttonType="RAISED" layoutX="642.0" layoutY="264.0" onAction="#onActionDeleteRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: red;" text="DELETE" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="453.0" layoutY="264.0" onAction="#onActionUpdateRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #192a56;" text="UPDATE" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="289.0" layoutY="264.0" onAction="#onActionSaveRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #f0932b;" text="SAVE" textFill="WHITE" />
+      <TableView fx:id="tblReservation" layoutX="21.0" layoutY="309.0" onMouseClicked="#onMouseClickReservation" prefHeight="193.0" prefWidth="712.0">
         <columns>
-          <TableColumn fx:id="colResId" prefWidth="123.0" text="RES ID" />
-          <TableColumn fx:id="colStId" prefWidth="125.0" text="ST ID" />
-            <TableColumn fx:id="colStName" prefWidth="162.0" text="ST NAME" />
-            <TableColumn fx:id="colRoomId" prefWidth="124.0" text="ROOM ID" />
-            <TableColumn fx:id="colRoomType" prefWidth="144.0" text="ROOM TYPE" />
-            <TableColumn fx:id="colStatus" prefWidth="134.0" text="STATUS" />
+          <TableColumn fx:id="colResId" prefWidth="100.0" text="RES ID" />
+          <TableColumn fx:id="colStId" prefWidth="123.0" text="ST ID" />
+            <TableColumn fx:id="colStName" prefWidth="143.0" text="ST NAME" />
+            <TableColumn fx:id="colRoomId" prefWidth="111.0" text="ROOM ID" />
+            <TableColumn fx:id="colRoomType" prefWidth="122.0" text="ROOM TYPE" />
+            <TableColumn fx:id="colStatus" prefWidth="114.0" text="STATUS" />
         </columns>
       </TableView>
       <Label layoutX="28.0" layoutY="229.0" text="STATUS">

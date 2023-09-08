@@ -233,5 +233,8 @@ public class RoomManage implements Initializable {
         String roomID=nextRoomId ();
         txtRoomId.setText (roomID);
     }
-
+//    Non-AC 3100.00
+//    Non-AC / Food 6500.00
+//    AC 8900.00
+//    AC / Food 16000.00
 }
